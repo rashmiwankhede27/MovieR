@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Booking System</title>
+    <link rel="stylesheet" href="a.css">
+</head>
+<body>
+    <div id="app">
+        <!-- Registration Form -->
+        <div id="registration-form" class="form-container">
+            <h2>Register</h2>
+            <form id="register-form">
+                <input type="text" id="name" placeholder="Enter your name" required>
+                <input type="email" id="email" placeholder="Enter your email" required>
+                <input type="password" id="password" placeholder="Enter your password" required>
+                <button type="submit">Register</button>
+            </form>
+        </div>
+
+        <!-- Movie Selection -->
+        <div id="movie-selection" class="container hidden">
+            <h2>Select a Movie</h2>
+            <div id="movie-list"></div>
+        </div>
+
+        <!-- Seat Selection -->
+        <div id="seat-selection" class="container hidden">
+            <h2>Select Seats</h2>
+            <div id="seat-map"></div>
+            <button id="confirm-seats">Confirm Seats</button>
+        </div>
+
+        <!-- Booking Confirmation -->
+        <div id="booking-confirmation" class="container hidden">
+            <h2>Booking Confirmation</h2>
+            <p id="booking-details"></p>
+        </div>
+
+        <!-- Billing Section -->
+        <!-- <div id="billing-section" class="container hidden">
+        <h2>Billing Information</h2>
+         <div id="billing-details"></div>
+        <button id="pay-button" class="button">Pay Now</button>
+        </div> -->
+
+        <!-- Billing Section -->
+        <div id="billing-section" class="container hidden">
+            <h2>Billing Information</h2>
+            <p>Movie: <span id="selected-movie-title"></span></p>
+            <div id="billing-details"></div>
+            <button id="pay-button" class="button">Pay Now</button>
+        </div>
+
+
+    </div>
+
+    <script src="a.js"></script>
+</body>
+</html>
